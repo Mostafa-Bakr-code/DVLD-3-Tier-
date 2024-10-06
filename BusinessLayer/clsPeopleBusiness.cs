@@ -105,16 +105,29 @@ namespace BusinessLayer
             return clsPeopleData.GetAllPersons();
         }
 
-
         public static DataTable GetAllCountries()
         {
             return clsPeopleData.GetAllCountries();
         }
 
-
         public static int GetTotalNumberOfPersons()
         {
             return clsPeopleData.GetTotalNumberOfPersons();
         }
+
+        public static bool IsPersonExist(int personID)
+        {
+
+            return clsPeopleData.IsPersonExist(personID);
+
+        }
+
+        public static bool IsPersonExist(string nationalNO)
+        {
+
+            return clsPeopleData.IsPersonExist(nationalNO);
+
+        }
+
     }
 }

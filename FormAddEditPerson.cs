@@ -118,20 +118,29 @@ namespace DVLD
 
         private void txtNationalnumber_Validating(object sender, CancelEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtNationalnumber.Text))
+            string nationalNO = txtNationalnumber.Text.Trim(); 
+
+           
+            if (string.IsNullOrWhiteSpace(nationalNO)) 
             {
-
-                e.Cancel = true;
-                txtNationalnumber.Focus();
+                e.Cancel = true; 
                 errorProvider1.SetError(txtNationalnumber, "National number should have a value");
-
             }
-
+           
+            else if (clsPeopleBusiness.IsPersonExist(nationalNO)) 
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(txtNationalnumber, "National number already exists.");
+            }
             else
             {
                 e.Cancel = false;
-                errorProvider1.SetError(txtNationalnumber, "");
+                errorProvider1.SetError(txtNationalnumber, ""); 
             }
+
         }
+
+
+
     }
 }

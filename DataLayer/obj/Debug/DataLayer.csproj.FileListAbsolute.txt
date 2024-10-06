@@ -4,3 +4,9 @@ C:\Users\Ahmed\Desktop\DVLD\DataLayer\obj\Debug\DataLayer.csproj.AssemblyReferen
 C:\Users\Ahmed\Desktop\DVLD\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
 C:\Users\Ahmed\Desktop\DVLD\DataLayer\obj\Debug\DataLayer.dll
 C:\Users\Ahmed\Desktop\DVLD\DataLayer\obj\Debug\DataLayer.pdb
+C:\Users\Ahmed\Desktop\DVLD-3-Tier-\DataLayer\bin\Debug\DataLayer.dll
+C:\Users\Ahmed\Desktop\DVLD-3-Tier-\DataLayer\bin\Debug\DataLayer.pdb
+C:\Users\Ahmed\Desktop\DVLD-3-Tier-\DataLayer\obj\Debug\DataLayer.csproj.AssemblyReference.cache
+C:\Users\Ahmed\Desktop\DVLD-3-Tier-\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\Ahmed\Desktop\DVLD-3-Tier-\DataLayer\obj\Debug\DataLayer.dll
+C:\Users\Ahmed\Desktop\DVLD-3-Tier-\DataLayer\obj\Debug\DataLayer.pdb

@@ -218,7 +218,6 @@ namespace DataLayer
             return dt;
         }
 
-
         public static int GetTotalNumberOfPersons()
         {
             int totalPersons = 0;
@@ -247,20 +246,19 @@ namespace DataLayer
             return totalPersons;
         }
 
-
-        public static bool DeletePerson(int ID)
+        public static bool DeletePerson(int personID)
         {
 
             int rowsAffected = 0;
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string query = @"Delete Users
-                                where ID = @ID";
+            string query = @"Delete Persons
+                                where PersonID = @personID";
 
             SqlCommand command = new SqlCommand(query, connection);
 
-            command.Parameters.AddWithValue("@ID", ID);
+            command.Parameters.AddWithValue("@personID", personID);
 
             try
             {
@@ -284,17 +282,51 @@ namespace DataLayer
 
         }
 
-        public static bool IsPersonExist(int ID)
+        public static bool IsPersonExist(int personID)
         {
             bool isFound = false;
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string query = "SELECT Found=1 FROM Users WHERE ID = @ID";
+            string query = "SELECT Found=1 FROM People WHERE PersonID = @personID";
 
             SqlCommand command = new SqlCommand(query, connection);
 
-            command.Parameters.AddWithValue("@ID", ID);
+            command.Parameters.AddWithValue("@personID", personID);
+
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                isFound = reader.HasRows;
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                //Console.WriteLine("Error: " + ex.Message);
+                isFound = false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return isFound;
+        }
+
+        public static bool IsPersonExist(string nationalNO)
+        {
+            bool isFound = false;
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string query = "SELECT Found=1 FROM People WHERE NationalNO = @nationalNO";
+
+            SqlCommand command = new SqlCommand(query, connection);
+
+            command.Parameters.AddWithValue("@nationalNO", nationalNO);
 
             try
             {

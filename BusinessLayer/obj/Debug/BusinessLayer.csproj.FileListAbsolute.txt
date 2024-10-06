@@ -7,3 +7,12 @@ C:\Users\Ahmed\Desktop\DVLD\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCom
 C:\Users\Ahmed\Desktop\DVLD\BusinessLayer\obj\Debug\Business.EA331CBA.Up2Date
 C:\Users\Ahmed\Desktop\DVLD\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\Ahmed\Desktop\DVLD\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\Ahmed\Desktop\DVLD-3-Tier-\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\Ahmed\Desktop\DVLD-3-Tier-\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\Ahmed\Desktop\DVLD-3-Tier-\BusinessLayer\bin\Debug\DataLayer.dll
+C:\Users\Ahmed\Desktop\DVLD-3-Tier-\BusinessLayer\bin\Debug\DataLayer.pdb
+C:\Users\Ahmed\Desktop\DVLD-3-Tier-\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\Ahmed\Desktop\DVLD-3-Tier-\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Ahmed\Desktop\DVLD-3-Tier-\BusinessLayer\obj\Debug\Business.EA331CBA.Up2Date
+C:\Users\Ahmed\Desktop\DVLD-3-Tier-\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\Ahmed\Desktop\DVLD-3-Tier-\BusinessLayer\obj\Debug\BusinessLayer.pdb
